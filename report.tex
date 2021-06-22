@@ -3,8 +3,8 @@
 %--------------------------------------------------------------------
 \newcommand{\MYTITLE}{污秽之世，美丽之笼}%论文标题
 \newcommand{\MYID}{2333333}%学号
-\newcommand{\MYNAME}{博丽灵梦}%姓名
-\newcommand{\MYCLASS}{博丽神社}%班级
+\newcommand{\MYNAME}{冯云飞}%姓名
+\newcommand{\MYCLASS}{金融实验班18}%班级
 \newcommand{\MYADVISOR}{上白泽慧音}%任课教师
 \newcommand{\MYCOURSE}{东方永夜抄}%课程名
 \newcommand{\MYTERM}{2021年春季学期}%学期
@@ -120,7 +120,7 @@
 \renewcommand \thesubsection {\arabic{subsection}.}
 \renewcommand \thechapter {\zhnum{chapter}、}
 \titleformat{\chapter}{\centering\zihao{4}\songti\bfseries}{\chinese{chapter}、}{0.05em}{}
-\titlespacing{\chapter}{16pt}{16pt}{*6}
+\titlespacing{\chapter}{0pt}{10pt}{*3}
 \titleformat{\section}{\zihao{-4}\songti\bfseries}{$\qquad$（\chinese{section}）}{0.05em}{}
 \titleformat{\subsection}{\zihao{-4}\songti\mdseries}{$\qquad$\arabic{subsection}.$\ $}{0.05em}{}
 
@@ -214,7 +214,7 @@
 \chapter*{\zihao{3} \MYTITLE}
 \setcounter{page}{1}
 
-这里写引言\cite{王宣承-1}
+这里写引言，论文引用示例\cite{王宣承-1}，按照国标2015格式引用
 %---------------------------------------------------------------------
 %  正文
 %---------------------------------------------------------------------
@@ -236,8 +236,8 @@
 \end{table}
 
 \chapter{丑时一刻}
-\section{啧啧}
-\subsection{阿斯顿}
+\section{二级标题示例}
+\subsection{三级标题示例}
 拆行公式：
 \begin{equation*}
 \begin{split}
@@ -248,15 +248,13 @@
 
 其中，HEA\_0表达是否\footnote{脚注示例}投保基础医疗保险的离散变量，HEA\_1代表是否投保补充医疗保险的离散变量，OLD\_0代表是否投保基础养老保险的离散变量，OLD\_1代表是否投保补充养老保险的虚拟变量，ifiwork代表受访者是否正在就业，family\_income代表家庭总收入.
 
-我们采取logit模型对2006年作为训练集回归，得到模型的预测准确率达到85.36\%.这是可以接受的.随后我们以2015年作为预测集预测了受访者有没有投保失业保险.
-
 
 
 \section{慧音}
 \subsection{就业情况}
 原文中对确定性收入的线性回归解释变量中有“家庭中就业人口比例”这一变量.CGSS2006将有关变量统计在“活动状态”中，具体分为全职就业、半职就业、临时就业、务农、服兵役等14种.考虑到原文希望得到“确定性收入”，我们推测“全职就业”似乎更为贴近“持久就业”的范畴；另外，根据我国《劳动法》的规定：
 \begin{quotation}
-  \textbf{\zihao{5}就业人口，在我国是指在16周岁以上，特殊职业需要18周岁以上，从事一定社会劳动并获取劳动报酬或经营收入的人员，其中，城镇就业人口是指在城镇地区从事非农业活动的就业人口，包括在国有单位、城镇集体单位、股份合作单位、联营单位、有限责任公司、股份有限公司、私营企业、港澳台投资单位、外商投资单位和个体工商户从业的人员.}
+  \textbf{\zihao{5}quotation示例}
 \end{quotation}
 
 据此，我们认为务农、服兵役是不符合“就业”范畴的.
@@ -269,7 +267,7 @@
   \zihao{5}参照前人的方法(Dynan et al. ,2004;罗楚亮,2004)，以城镇家庭的\textbf{人均实际收入}作为因变量，选择家庭成员的平均年龄、平均受教育程度、户主的性别和政治面貌、家庭中的就业人口比例以及所在省份等作为自变量进行OLS回归，并使用该方程\textbf{预测值}和\textbf{残差}作为家庭的持久收入和不确定收入.
 \end{quotation}
 
-据此我们根据回归方程:表\ref{hhh}
+交叉引用示例:表\ref{hhh}
 
 \[
 Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender + \beta_{4}hccp + \beta_{5}worker\_ratio + \epsilon
@@ -277,7 +275,7 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
 
 
 \subsection{解释变量的选择}
-\subsection{啊啊阿发}
+喵喵喵
 \begin{table}
     \caption{手动插入表格示例1}
     \centering
