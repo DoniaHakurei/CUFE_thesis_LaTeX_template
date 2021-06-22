@@ -1,0 +1,174 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.6.21)  22 JUN 2021 14:44
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**report
+(./report.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count184
+\Gm@cntv=\count185
+\c@Gm@tempcnt=\count186
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/ctex/ctex.sty (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+ (|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count187
+\l__color_backend_stack_int=\count188
+\g__color_backend_stack_int=\count189
+\g__graphics_track_int=\count190
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count191
+\g__pdf_backend_annotation_int=\count192
+\g__pdf_backend_link_int=\count193
+))
+Package: ctex 2021/03/14 v2.5.6 Chinese adapter in LaTeX (CTEX)
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2021/03/14 v2.5.6 Patching commands (CTEX)
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
+Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty))
+\l__ctex_tmp_int=\count194
+\l__ctex_tmp_box=\box48
+\l__ctex_tmp_dim=\dimen147
+\g__ctex_section_depth_int=\count195
+\g__ctex_font_size_int=\count196
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2021/03/14 v2.5.6 Option configuration file (CTEX)
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2021/03/14 v2.5.6 XeLaTeX adapter (CTEX)
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2021-03-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen148
+\l__xtemplate_tmp_int=\count197
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+)
+\l__xeCJK_tmp_int=\count198
+\l__xeCJK_tmp_box=\box49
+\l__xeCJK_tmp_dim=\dimen149
+\l__xeCJK_tmp_skip=\skip50
+\g__xeCJK_space_factor_int=\count199
+\l__xeCJK_begin_int=\count266
+\l__xeCJK_end_int=\count267
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip51
+\g__xeCJK_node_int=\count268
+\c__xeCJK_CJK_node_dim=\dimen150
+\c__xeCJK_CJK-space_node_dim=\dimen151
+\c__xeCJK_default_node_dim=\dimen152
+\c__xeCJK_default-space_node_dim=\dimen153
+\c__xeCJK_CJK-widow_node_dim=\dimen154
+\c__xeCJK_normalspace_node_dim=\dimen155
+\l__xeCJK_ccglue_skip=\skip52
+\l__xeCJK_ecglue_skip=\skip53
+\l__xeCJK_punct_kern_skip=\skip54
+\l__xeCJK_last_penalty_int=\count269
+\l__xeCJK_last_bound_dim=\dimen156
+\l__xeCJK_last_kern_dim=\dimen157
+\l__xeCJK_widow_penalty_int=\count270
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2341.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen158
+\l__xeCJK_mixed_punct_width_dim=\dimen159
+\l__xeCJK_middle_punct_width_dim=\dimen160
+\l__xeCJK_fixed_margin_width_dim=\dimen161
+\l__xeCJK_mixed_margin_width_dim=\dimen162
+\l__xeCJK_middle_margin_width_dim=\dimen163
+\l__xeCJK_bound_punct_width_dim=\dimen164
+\l__xeCJK_bound_margin_width_dim=\dimen165
+\l__xeCJK_margin_minimum_dim=\dimen166
+\l__xeCJK_kerning_total_width_dim=\dimen167
+\l__xeCJK_same_align_margin_dim=\dimen168
+\l__xeCJK_different_align_margin_dim=\dimen169
+\l__xeCJK_kerning_margin_width_dim=\dimen170
+\l__xeCJK_kerning_margin_minimum_dim=\dimen171
+\l__xeCJK_bound_dim=\dimen172
+\l__xeCJK_reverse_bound_dim=\dimen173
+\l__xeCJK_margin_dim=\dimen174
+\l__xeCJK_minimum_bound_dim=\dimen175
+\l__xeCJK_kerning_margin_dim=\dimen176
+\g__xeCJK_family_int=\count271
+\l__xeCJK_fam_int=\count272
+\g__xeCJK_fam_allocation_int=\count273
+\l__xeCJK_verb_case_int=\count274
+\l__xeCJK_verb_exspace_skip=\skip55
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count275
+\l__fontspec_language_int=\count276
+\l__fontspec_strnum_int=\count277
+\l__fontspec_tmp_int=\count278
+\l__fontspec_tmpa_int=\count279
+\l__fontspec_tmpb_int=\count280
+\l__fontspec_tmpc_int=\count281
+\l__fontspec_em_int=\count282
+\l__fontspec_emdef_int=\count283
+\l__fontspec_strong_int=\count284
+\l__fontspec_strongdef_int=\count285
+\l__fontspec_tmpa_dim=\dimen177
+\l__fontspec_tmpb_dim=\dimen178
+\l__fontspec_tmpc_dim=\dimen179
+ (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/efficience/texliveinstalled/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+Fi
