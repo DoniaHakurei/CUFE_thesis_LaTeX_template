@@ -5,6 +5,6 @@
 
 基于github用户zshicode的项目https://github.com/zshicode/LaTeX-Beamer-Nankai 修改
 
-建议采用编译链：xelatex->bibier->xelatex->xelatex
+建议采用编译链：xelatex->biber->xelatex->xelatex
 
 
