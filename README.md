@@ -7,4 +7,5 @@
 
 建议采用编译链：xelatex->biber->xelatex->xelatex
 
+如果不用biber，可以直接xelatex，能节省许多时间
 
