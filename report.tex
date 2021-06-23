@@ -97,13 +97,15 @@
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
 \setlength{\baselineskip}{22pt}
 %---------------------------------------------------------------------
-%	%图标顺序标号，不分章节
+%	图表顺序标号，不分章节
 %---------------------------------------------------------------------
 \usepackage{chngcntr}
 \counterwithout{table}{chapter}
 \counterwithout{table}{section}
 \counterwithout{figure}{chapter}
 \counterwithout{figure}{section}
+
+\titleclass{\chapter}{straight}%禁止chapter换页
 %---------------------------------------------------------------------
 %	页眉页脚设置
 %---------------------------------------------------------------------
@@ -201,17 +203,18 @@
     \par\textbf{Keywords:} keyword1, keyword2, keyword3
     \end{enabstract}
     \thispagestyle{empty}
-
+    \newpage
 %---------------------------------------------------------------------
 %  目录页
 %---------------------------------------------------------------------
 \tableofcontents % 生成目录
 \thispagestyle{empty}
+\newpage
 %---------------------------------------------------------------------
 %  引言
 %---------------------------------------------------------------------
 
-\chapter*{\zihao{3} \MYTITLE}
+\chapter*{\zihao{3} \heiti \MYTITLE}
 \setcounter{page}{1}
 
 这里写引言，论文引用示例\cite{王宣承-1}，按照国标2015格式引用
@@ -264,7 +267,7 @@
 \subsection{被解释变量的选择}
 关于这两个变量，原文的描述是：
 \begin{quotation}
-  \zihao{5}参照前人的方法(Dynan et al. ,2004;罗楚亮,2004)，以城镇家庭的\textbf{人均实际收入}作为因变量，选择家庭成员的平均年龄、平均受教育程度、户主的性别和政治面貌、家庭中的就业人口比例以及所在省份等作为自变量进行OLS回归，并使用该方程\textbf{预测值}和\textbf{残差}作为家庭的持久收入和不确定收入.
+  \zihao{5}参照前人的方法，以城镇家庭的\textbf{人均实际收入}作为因变量，选择家庭成员的平均年龄、平均受教育程度、户主的性别和政治面貌、家庭中的就业人口比例以及所在省份等作为自变量进行OLS回归，并使用该方程\textbf{预测值}和\textbf{残差}作为家庭的持久收入和不确定收入.
 \end{quotation}
 
 交叉引用示例:表\ref{hhh}
@@ -296,6 +299,7 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
         unemsec & 0.29 & 0.35 & 0.00 & 1.00 \\ 
         \bottomrule[1.5pt]
     \end{tabular}
+    \label{hhh}
 \end{table}
 
 
@@ -308,44 +312,6 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
     \includegraphics[width=0.65\textwidth]{figure/cancha.pdf}
     \caption{插入图片示例}
 \end{figure}
-
-\begin{table}
-    \caption{手动插入表格示例2}
-    \centering
-    \begin{tabular}{lcccc}
-        \toprule[1.5pt]
-        variable & mean & sd & min & max \\ 
-        \midrule[1.0pt]
-        SR1 & 0.60 & 0.52 & -5.00 & 1.00 \\ 
-        SR2 & 0.47 & 0.63 & -5.38 & 1.00 \\ 
-        peincome & 9.72 & 0.60 & 7.86 & 11.92 \\ 
-        unincome & 0.00 & 0.74 & -3.35 & 3.71 \\ 
-        PENSION & 0.78 & 0.42 & 0.00 & 1.00 \\ 
-        HEASEC & 0.93 & 0.26 & 0.00 & 1.00 \\ 
-        UNEMSEC & 0.45 & 0.50 & 0.00 & 1.00 \\ 
-        r & 0.61 & 0.27 & 0.00 & 1.00 \\ 
-        pension & 0.47 & 0.34 & 0.00 & 1.00 \\ 
-        heasec & 0.57 & 0.30 & 0.00 & 1.00 \\ 
-        unemsec & 0.29 & 0.35 & 0.00 & 1.00 \\ 
-        hgender & 0.99 & 0.11 & 0.00 & 1.00 \\ 
-        hccp & 0.24 & 0.43 & 0.00 & 1.00 \\ 
-        hedu1 & 0.19 & 0.39 & 0.00 & 1.00 \\ 
-        hedu2 & 0.32 & 0.47 & 0.00 & 1.00 \\ 
-        hedu3 & 0.26 & 0.44 & 0.00 & 1.00 \\ 
-        hedu4 & 0.23 & 0.42 & 0.00 & 1.00 \\ 
-        headage & 52.50 & 14.95 & 22.00 & 94.00 \\ 
-        headage2 & 0.30 & 0.16 & 0.05 & 0.88 \\ 
-        rchild1 & 0.03 & 0.09 & 0.00 & 0.67 \\ 
-        rchild2 & 0.04 & 0.10 & 0.00 & 0.67 \\ 
-        rchild3 & 0.02 & 0.07 & 0.00 & 0.50 \\ 
-        rchild4 & 0.02 & 0.08 & 0.00 & 0.67 \\ 
-        rchild5 & 0.02 & 0.08 & 0.00 & 0.50 \\ 
-        rold & 0.21 & 0.36 & 0.00 & 1.00 \\ 
-        ln\_ha & 3.44 & 0.66 & 0.18 & 6.11 \\ 
-        \bottomrule[1.5pt]
-    \end{tabular}
-    \label{hhh}
-\end{table}
 
 
 插入代码示例：
@@ -364,6 +330,7 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
 %---------------------------------------------------------------------
 %  参考文献
 %---------------------------------------------------------------------
+
 \printbibliography
 
 \end{document} 
