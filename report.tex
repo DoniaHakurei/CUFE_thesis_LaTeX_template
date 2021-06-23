@@ -6,14 +6,15 @@
 \newcommand{\MYNAME}{冯云飞}%姓名
 \newcommand{\MYCLASS}{金融实验班18}%班级
 \newcommand{\MYADVISOR}{上白泽慧音}%任课教师
-\newcommand{\MYCOURSE}{东方永夜抄}%课程名
+\newcommand{\MYCOURSE}{永夜抄}%课程名
 \newcommand{\MYTERM}{2021年春季学期}%学期
 \newcommand{\MYCOURSEID}{233333}%课程ID
 %---------------------------------------------------------------------
 %   各种导言
 %--------------------------------------------------------------------
 \documentclass[a4paper,12pt]{report}
-\usepackage[margin=1in]{geometry} % to change the page dimensions
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.54cm,bottom=2.54cm}%页边距
 \usepackage{ctex}
 \usepackage{xeCJK}
 \usepackage{comment}
@@ -76,6 +77,7 @@
 \renewcommand {\thetable} {\arabic{table}}
 \renewcommand {\thefigure} {\arabic{figure}}
 \usepackage{amsfonts}
+\usepackage{lipsum}
 %\usepackage{bm}
 \usepackage{booktabs} % for much better looking tables
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
@@ -104,6 +106,9 @@
 \counterwithout{table}{section}
 \counterwithout{figure}{chapter}
 \counterwithout{figure}{section}
+\counterwithout{equation}{chapter}
+\counterwithout{equation}{section}
+
 
 \titleclass{\chapter}{straight}%禁止chapter换页
 %---------------------------------------------------------------------
@@ -122,7 +127,9 @@
 \renewcommand \thesubsection {\arabic{subsection}.}
 \renewcommand \thechapter {\zhnum{chapter}、}
 \titleformat{\chapter}{\centering\zihao{4}\songti\bfseries}{\chinese{chapter}、}{0.05em}{}
-\titlespacing{\chapter}{0pt}{10pt}{*3}
+\titlespacing{\chapter}{12pt}{12pt}{*3}
+\titlespacing{\section}{0pt}{0pt}{*0}
+\titlespacing{\subsection}{0pt}{0pt}{*0}
 \titleformat{\section}{\zihao{-4}\songti\bfseries}{$\qquad$（\chinese{section}）}{0.05em}{}
 \titleformat{\subsection}{\zihao{-4}\songti\mdseries}{$\qquad$\arabic{subsection}.$\ $}{0.05em}{}
 
@@ -130,21 +137,18 @@
 %	摘要设置
 %---------------------------------------------------------------------
 %\renewcommand{\abstractname}{摘要}
-\newcommand{\enabstractname}{Abstract}
+\newcommand{\enabstractname}{ABSTRACT}
 \newcommand{\cnabstractname}{内容摘要}
 \newenvironment{enabstract}{%
   \par\small
   \noindent\mbox{}\hfill{\bfseries \zihao{3} \enabstractname}\hfill\mbox{}\par
-  \vskip 2.5ex}{\par\vskip 2.5ex}
+  \vskip 2.0ex}{\par\vskip 2.0ex}
 \newenvironment{cnabstract}{%
   \par\small
   \noindent\mbox{}\hfill{\bfseries \zihao{3} \cnabstractname}\hfill\mbox{}\par
-  \vskip 2.5ex}{\par\vskip 2.5ex}
+  \vskip 2.0ex}{\par\vskip 2.0ex}
 \renewcommand{\figurename}{图}
 \renewcommand{\tablename}{表}
-
-
-
 %---------------------------------------------------------------------
 %	目录页设置
 %---------------------------------------------------------------------
@@ -157,8 +161,6 @@
 {\hspace{.5em}\titlerule*[4pt]{$\cdot$}\contentspage}
 %\titlecontents{subsection}[4em]{\vspace{0.1\baselineskip}\songti\zihao{-4}}{\thecontentslabel\ }{}
 %{\hspace{.5em}\titlerule*[4pt]{$\cdot$}\contentspage}
-
-
 \begin{document}
 %---------------------------------------------------------------------
 %	封面设置
@@ -166,49 +168,56 @@
 \begin{titlepage}
     \begin{center}
 
-    \includegraphics[width=1.0\textwidth]{figure/zhongcai.png}\\
-    \vspace{20mm}
-    \textbf{\zihao{2}{\heiti\textbf{\MYTITLE}}}\\[0.8cm]
-    \vspace{10mm}
-    \vspace{\fill}
+        \includegraphics[width=1.0\textwidth]{figure/zhongcai.png}\\
+        \vspace{20mm}
+        \textbf{\zihao{2}{\heiti\textbf{\MYTITLE}}}\\[0.8cm]
+        \vspace{10mm}
+        \vspace{\fill}
 
-\setlength{\extrarowheight}{3mm}
-{\songti\zihao{3}	
-\begin{tabular}{rp{8cm}<{\centering}}
-    {\makebox[4\ccwd][s]{学年学期：}} & \kaishu \underline{\makebox[8cm]{\MYTERM}} \\
-    {\makebox[4\ccwd][s]{课程名称：}} & \kaishu \underline{\makebox[8cm]{\MYCOURSE}} \\
-    {\makebox[4\ccwd][s]{课程代码：}} & \kaishu \underline{\makebox[8cm]{\MYCOURSEID}} \\
-    {\makebox[4\ccwd][s]{任课教师：}}  & \kaishu \underline{\makebox[8cm]{\MYADVISOR}} \\
-    {\makebox[4\ccwd][s]{班\qquad 级：}} & \kaishu \underline{\makebox[8cm]{\MYCLASS}}  \\
-    {\makebox[4\ccwd][s]{学\qquad 号：}} & \kaishu \underline{\makebox[8cm]{\MYID}}  \\
-    {\makebox[4\ccwd][s]{姓\qquad 名：}} & \kaishu \underline{\makebox[8cm]{\MYNAME}} \\
-    \\
-    {\makebox[4\ccwd][s]{总\qquad 分：}} & \kaishu \underline{\makebox[8cm]{}} \\
-    {\makebox[4\ccwd][s]{评$\ $分$\ $人：}} & \kaishu \underline{\makebox[8cm]{}} \\
-\end{tabular}
- }\\[2cm]
-    \end{center}	
+        \setlength{\extrarowheight}{3mm}
+        {\songti\zihao{3}
+            \begin{tabular}{rp{8cm}<{\centering}}
+                {\makebox[4\ccwd][s]{学年学期：}}       & \kaishu \underline{\makebox[8cm]{\MYTERM}}     \\
+                {\makebox[4\ccwd][s]{课程名称：}}       & \kaishu \underline{\makebox[8cm]{\MYCOURSE}}   \\
+                {\makebox[4\ccwd][s]{课程代码：}}       & \kaishu \underline{\makebox[8cm]{\MYCOURSEID}} \\
+                {\makebox[4\ccwd][s]{任课教师：}}       & \kaishu \underline{\makebox[8cm]{\MYADVISOR}}  \\
+                {\makebox[4\ccwd][s]{班\qquad 级：}}    & \kaishu \underline{\makebox[8cm]{\MYCLASS}}    \\
+                {\makebox[4\ccwd][s]{学\qquad 号：}}    & \kaishu \underline{\makebox[8cm]{\MYID}}       \\
+                {\makebox[4\ccwd][s]{姓\qquad 名：}}    & \kaishu \underline{\makebox[8cm]{\MYNAME}}     \\
+                \\
+                {\makebox[4\ccwd][s]{总\qquad 分：}}    & \kaishu \underline{\makebox[8cm]{}}            \\
+                {\makebox[4\ccwd][s]{评$\ $分$\ $人：}} & \kaishu \underline{\makebox[8cm]{}}            \\
+            \end{tabular}
+        }\\[2cm]
+    \end{center}
 \end{titlepage}
 
 %---------------------------------------------------------------------
 %  摘要页
 %---------------------------------------------------------------------
+\setcounter{page}{1}
 \begin{cnabstract}
-    摘要正文
+妖怪的星座里北极星是不动之星，也就是指不动明王的夜貌，不动明王——据说是大日如来的化身。
+    大日如来，不用多说即是能够使妖怪无力化的太阳的化身，在这里为了避免夜里妖怪的百鬼夜行失去控制，
+    于是化为北极星进行阻拦。天龙好似迟早要吃掉那个不动尊——北极星，企图支配昼夜。
+    根据记述，预言着几千年后天龙将会有所行动，到那时妖怪的社会也会发生很大变化。
+    因为妖怪的先见性根本不是人类所能比拟的，所以真是一段令人在意的记述……
     \par\textbf{关键字: } 关键字1，关键字2，关键字3
-    \end{cnabstract}
-    \vspace{10mm}
-    \begin{enabstract}
-    English abstract
-    \par\textbf{Keywords:} keyword1, keyword2, keyword3
-    \end{enabstract}
-    \thispagestyle{empty}
-    \newpage
+\end{cnabstract}
+
+\begin{enabstract}
+    \lipsum[1]
+    \par\textbf{KEY WORDS:} keyword1, keyword2, keyword3
+\end{enabstract}
+%\thispagestyle{empty}
+\newpage
+
 %---------------------------------------------------------------------
 %  目录页
 %---------------------------------------------------------------------
+\setcounter{page}{1}
 \tableofcontents % 生成目录
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \newpage
 %---------------------------------------------------------------------
 %  引言
@@ -216,24 +225,25 @@
 
 \chapter*{\zihao{3} \heiti \MYTITLE}
 \setcounter{page}{1}
+\lipsum{}
 
-这里写引言，论文引用示例\cite{王宣承-1}，按照国标2015格式引用
+这里写引言，论文引用示例\cite{王宣承-1}，按照国标2015格式引用。
 %---------------------------------------------------------------------
 %  正文
 %---------------------------------------------------------------------
 \chapter{子时一刻}
-
+\section{穢き世の美しき檻}
 \begin{table}[h]
     \centering
     \begin{tabular}{lc}
         \toprule[1.5pt]
-        成员 & 分工\\
+        成员       & 分工                                        \\
         \midrule[1.0pt]
-        博丽灵梦 & 组长、初期报告展示、复制报告汇总\\
-        雾雨魔理沙 & 稳健OLS与FGLS回归估计及分地区、年度差异分析\\
-        东风谷早苗 & 分位数回归、分地区回归、年度差异分析\\
-        十六夜宵夜 & 数据处理、期末汇报展示\\
-        魂魄妖梦 & 数据处理、中期报告展示、排版整理\\
+        博丽灵梦   & 组长、初期报告展示、复制报告汇总            \\
+        雾雨魔理沙 & 稳健OLS与FGLS回归估计及分地区、年度差异分析 \\
+        东风谷早苗 & 分位数回归、分地区回归、年度差异分析        \\
+        十六夜宵夜 & 数据处理、期末汇报展示                      \\
+        魂魄妖梦   & 数据处理、中期报告展示、排版整理            \\
         \bottomrule[1.5pt]
     \end{tabular}
 \end{table}
@@ -242,22 +252,20 @@
 \section{二级标题示例}
 \subsection{三级标题示例}
 拆行公式：
-\begin{equation*}
-\begin{split}
-   UNEMSEC = \beta_0 + \beta_1HEA\_0 + \beta_2HEA\_1 + \beta_3OLD\_0 +  \\
-     \beta_4OLD\_1 + \beta_5ifiwork + \beta_6family\_income + \epsilon
-\end{split}
-\end{equation*}
+\begin{equation}
+    \begin{split}
+        UNEMSEC = \beta_0 + \beta_1HEA\_0 + \beta_2HEA\_1 + \beta_3OLD\_0 +  \\
+        \beta_4OLD\_1 + \beta_5ifiwork + \beta_6family\_income + \epsilon
+    \end{split}
+\end{equation}
 
-其中，HEA\_0表达是否\footnote{脚注示例}投保基础医疗保险的离散变量，HEA\_1代表是否投保补充医疗保险的离散变量，OLD\_0代表是否投保基础养老保险的离散变量，OLD\_1代表是否投保补充养老保险的虚拟变量，ifiwork代表受访者是否正在就业，family\_income代表家庭总收入.
-
-
+\lipsum[1]
 
 \section{慧音}
 \subsection{就业情况}
 原文中对确定性收入的线性回归解释变量中有“家庭中就业人口比例”这一变量.CGSS2006将有关变量统计在“活动状态”中，具体分为全职就业、半职就业、临时就业、务农、服兵役等14种.考虑到原文希望得到“确定性收入”，我们推测“全职就业”似乎更为贴近“持久就业”的范畴；另外，根据我国《劳动法》的规定：
 \begin{quotation}
-  \textbf{\zihao{5}quotation示例}
+    \lipsum[1]
 \end{quotation}
 
 据此，我们认为务农、服兵役是不符合“就业”范畴的.
@@ -266,14 +274,15 @@
 \section{线性回归计算peincome、unincome}
 \subsection{被解释变量的选择}
 关于这两个变量，原文的描述是：
-\begin{quotation}
-  \zihao{5}参照前人的方法，以城镇家庭的\textbf{人均实际收入}作为因变量，选择家庭成员的平均年龄、平均受教育程度、户主的性别和政治面貌、家庭中的就业人口比例以及所在省份等作为自变量进行OLS回归，并使用该方程\textbf{预测值}和\textbf{残差}作为家庭的持久收入和不确定收入.
-\end{quotation}
+\lipsum[2]
+
+北风卷第白草折
+
+胡天八月即飞雪
 
 交叉引用示例:表\ref{hhh}
-
 \[
-Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender + \beta_{4}hccp + \beta_{5}worker\_ratio + \epsilon
+    Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender + \beta_{4}hccp + \beta_{5}worker\_ratio + \epsilon
 \]
 
 
@@ -284,24 +293,23 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
     \centering
     \begin{tabular}{lcccc}
         \toprule[1.5pt]
-        variable & mean & sd & min & max \\ 
+        variable & mean & sd   & min   & max   \\
         \midrule[1.0pt]
-        SR1 & 0.60 & 0.52 & -5.00 & 1.00 \\ 
-        SR2 & 0.47 & 0.63 & -5.38 & 1.00 \\ 
-        peincome & 9.72 & 0.60 & 7.86 & 11.92 \\ 
-        unincome & 0.00 & 0.74 & -3.35 & 3.71 \\ 
-        PENSION & 0.78 & 0.42 & 0.00 & 1.00 \\ 
-        HEASEC & 0.93 & 0.26 & 0.00 & 1.00 \\ 
-        UNEMSEC & 0.45 & 0.50 & 0.00 & 1.00 \\ 
-        r & 0.61 & 0.27 & 0.00 & 1.00 \\ 
-        pension & 0.47 & 0.34 & 0.00 & 1.00 \\ 
-        heasec & 0.57 & 0.30 & 0.00 & 1.00 \\ 
-        unemsec & 0.29 & 0.35 & 0.00 & 1.00 \\ 
+        SR1      & 0.60 & 0.52 & -5.00 & 1.00  \\
+        SR2      & 0.47 & 0.63 & -5.38 & 1.00  \\
+        peincome & 9.72 & 0.60 & 7.86  & 11.92 \\
+        unincome & 0.00 & 0.74 & -3.35 & 3.71  \\
+        PENSION  & 0.78 & 0.42 & 0.00  & 1.00  \\
+        HEASEC   & 0.93 & 0.26 & 0.00  & 1.00  \\
+        UNEMSEC  & 0.45 & 0.50 & 0.00  & 1.00  \\
+        r        & 0.61 & 0.27 & 0.00  & 1.00  \\
+        pension  & 0.47 & 0.34 & 0.00  & 1.00  \\
+        heasec   & 0.57 & 0.30 & 0.00  & 1.00  \\
+        unemsec  & 0.29 & 0.35 & 0.00  & 1.00  \\
         \bottomrule[1.5pt]
     \end{tabular}
     \label{hhh}
 \end{table}
-
 
 
 
@@ -333,4 +341,4 @@ Ave\_income = \beta_0 + \beta_{1}Ave\_age + \beta_{2}Ave\_edu + \beta_{3}hgender
 
 \printbibliography
 
-\end{document} 
+\end{document}
