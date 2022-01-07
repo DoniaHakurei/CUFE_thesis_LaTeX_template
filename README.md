@@ -1,11 +1,12 @@
 # CUFE_thesis_LaTeX_template
+
 非官方中央财经大学本科论文LaTeX模板
 
-Unofficial Central University of Finance and Economics LaTeX template of banchelor thesis
+Unofficial Central University of Finance and Economics LaTeX template for banchelor thesis
 
 20210624更新：摘要格式问题、一级标题分页问题、页边距问题
 
-格式参考[中央财经大学金融学院教务处规定](http://sf.cufe.edu.cn/info/1124/3865.htm)
+格式参考[中央财经大学金融学院规定](http://sf.cufe.edu.cn/info/1124/3865.htm)
 
 基于github用户zshicode的[南开大学系列模板项目](https://github.com/zshicode/LaTeX-Beamer-Nankai)修改
 
